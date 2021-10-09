@@ -1,0 +1,14 @@
+CREATE DATABASE ASP_Crud
+
+USE ASP_Crud
+
+CREATE TABLE Info_Produtos (
+	Produto_ID INT PRIMARY KEY IDENTITY(1,1),
+	Nome_Item NVARCHAR(100),
+	Especificacao NVARCHAR(100),
+	Unidade NVARCHAR(100),
+	Cor NVARCHAR(100),
+	Data_Reposicao DATETIME,
+	Quantidade FLOAT,
+	Status NVARCHAR(100)
+)
