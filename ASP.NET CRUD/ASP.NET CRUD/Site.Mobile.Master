@@ -12,12 +12,20 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1>Mobile Master Page</h1>
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
-        <friendlyUrls:ViewSwitcher ID="ViewSwitcher1" runat="server" />
+        <div class="navbar navbar-fixed-top">
+            <div style="background-color: #2D6CEA; font-size: xx-large; text-align: center; color: white; width: 100%">
+        CADASTRO DE PRODUTOS -
+        CRUD com Asp.NET e Visual Basic
+            </div>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Crud ASP.NET - Jean Carlos</p>
+            </footer>
+        </div>
     </div>
     </form>
 </body>
